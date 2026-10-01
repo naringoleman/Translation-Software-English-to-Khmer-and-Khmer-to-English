@@ -1,0 +1,21 @@
+{
+  "name": "english-khmer-translator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node --experimental-strip-types server/index.ts --dev",
+    "build": "tsc --noEmit && vite build",
+    "start": "node --experimental-strip-types server/index.ts",
+    "test": "node --experimental-strip-types --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.7"
+  }
+}
